@@ -363,46 +363,48 @@ public class Ex4 {
 //		System.out.println("sum = " + sum);
 		
 //		답
-//		int num = 12345;
-//		int sum = 0;
-//		
-////		나머지 연산자를 이용해서 계산하는 방법
-////		num		num/10	  num%10
-////		12345	1234	  5
-////		1234	123		  5
-////		123		12		  5
-////		12		1		  5
-////		1		0		  5
-//		while(num > 0) {
-////			나머지 연산 자리수 자르고 누적합을 구함
-//			sum = sum + (num % 10);
-////			num / 10 값을 반복
-//			num = num / 10;
-//		}
-//		System.out.println("sum = " + sum);
+		int num = 12345;
+		int sum = 0;
+		
+//		나머지 연산자를 이용해서 계산하는 방법
+//		num		num/10	  num%10
+//		12345	1234	  5
+//		1234	123		  5
+//		123		12		  5
+//		12		1		  5
+//		1		0		  5
+		while(num > 0) {
+//			나머지 연산 자리수 자르고 누적합을 구함
+			sum = sum + (num % 10);
+//			num / 10 값을 반복
+			num = num / 10;
+		}
+		System.out.println("sum = " + sum);
 		
 //		연습문제 4-10
-		int answer = (int)(Math.random() * 100) + 1;
-		int input = 0;
-		int count = 0;
-		
-		java.util.Scanner s = new java.util.Scanner(System.in);
-		
-		do {
-			count++;
-			System.out.print("1과 100사이의 값을 입력하세요 : ");
-			input = s.nextInt();
-			
-			if(answer > input) {
-				System.out.println("더 큰 수를 입력하세요.");
-			} else if(answer < input) {
-				System.out.println("더 작은 수를 입력하세요.");
-			} else {
-				System.out.println("정답이다 이 씨발롬아");
-				System.out.println("시도 횟수는 " + count + "임");
-				break;
-			}
-		} while(true);
+//		int answer = (int)(Math.random() * 100) + 1;
+//		int input = 0;
+//		int count = 0;
+//		
+//		java.util.Scanner s = new java.util.Scanner(System.in);
+//		
+//		do {
+//			count++;
+//			System.out.print("1과 100사이의 값을 입력하세요 : ");
+//			input = s.nextInt();
+//			
+//			if(answer > input) {
+//				System.out.println("더 큰 수를 입력하세요.");
+//				continue;
+//			} else if(answer < input) {
+//				System.out.println("더 작은 수를 입력하세요.");
+//				continue;
+//			} else {
+//				System.out.println("정답이다 이 씨발롬아");
+//				System.out.println("시도 횟수는 " + count + "임");
+//				break;
+//			}
+//		} while(true);
 		
 	}
 }

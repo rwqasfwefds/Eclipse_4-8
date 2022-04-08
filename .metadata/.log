@@ -1,0 +1,4201 @@
+!SESSION 2022-04-08 09:11:22.659 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2022-04-08 09:11:57.082
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-04-08 09:11:57.082
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-08 09:11:57.592
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:728)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createWorkspaceNameControl(WorkspaceControl.java:118)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createControl(WorkspaceControl.java:44)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspacesTabFactory.createTabArea(WorkspacesTabFactory.java:85)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-08 09:11:57.592
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:683)
+	at org.eclipse.jface.resource.URLImageDescriptor._createImage(URLImageDescriptor.java:275)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:256)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.tabs.RecentTabFactory.createTabArea(RecentTabFactory.java:93)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-08 09:11:57.592
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:728)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createWorkspaceNameControl(WorkspaceControl.java:118)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createControl(WorkspaceControl.java:44)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspacesTabFactory.createTabArea(WorkspacesTabFactory.java:85)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2022-04-08 09:11:57.701
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2022-04-08 09:11:57.732
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.jface 2 0 2022-04-08 09:11:58.545
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-08 09:11:58.545
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@74ed7111,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@74691677,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-08 09:11:58.545
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3314f179,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1abd1a28,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-08 09:11:59.467
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:728)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createRecentWorkspacesComposite(LaunchTabMainPage.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createContents(LaunchTabMainPage.java:55)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createPages(LaunchTabFactory.java:40)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createTabArea(LaunchTabFactory.java:34)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-08 09:12:02.808
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ds'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-04-08 16:27:21.988 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-08 16:27:59.926
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:728)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createRecentWorkspacesComposite(LaunchTabMainPage.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createContents(LaunchTabMainPage.java:55)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createPages(LaunchTabFactory.java:40)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createTabArea(LaunchTabFactory.java:34)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-08 16:27:59.926
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:683)
+	at org.eclipse.jface.resource.URLImageDescriptor._createImage(URLImageDescriptor.java:275)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:256)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.tabs.RecentTabFactory.createTabArea(RecentTabFactory.java:93)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-08 16:27:59.926
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:728)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createWorkspaceNameControl(WorkspaceControl.java:118)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createControl(WorkspaceControl.java:44)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspacesTabFactory.createTabArea(WorkspacesTabFactory.java:85)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-08 16:27:59.926
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:728)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createWorkspaceNameControl(WorkspaceControl.java:118)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createControl(WorkspaceControl.java:44)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspacesTabFactory.createTabArea(WorkspacesTabFactory.java:85)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-08 16:27:59.926
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:728)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createWorkspaceNameControl(WorkspaceControl.java:118)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createControl(WorkspaceControl.java:44)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspacesTabFactory.createTabArea(WorkspacesTabFactory.java:85)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-08 16:27:59.926
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:728)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createRecentWorkspacesComposite(LaunchTabMainPage.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createContents(LaunchTabMainPage.java:55)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createPages(LaunchTabFactory.java:40)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createTabArea(LaunchTabFactory.java:34)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jface 2 0 2022-04-08 16:28:01.035
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-08 16:28:01.035
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c056020,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7cc842b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-08 16:28:01.035
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53dd29e0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3733b1f4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-08 16:28:05.315
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ds'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.help.base 2 0 2022-04-08 16:28:18.398
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jdt.doc.user_3.15.1300.v20220302-1215 [219]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-04-08 16:28:18.401
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.platform.doc.user_4.23.0.v20220302-1425 [334]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.jdt.core 4 4 2022-04-08 17:38:36.455
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package ex;
+
+import java.util.Scanner;
+
+public class Ex4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Ex4_1
+//		int score = 80;
+//		
+//		if(score > 60) {
+//			System.out.println("합격입니다.");
+//		}
+		
+//		Ex4_2
+//		int x = 0;
+//		System.out.printf("x = %d 일 때, 참인 것은 %n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("! (x == 0)");
+//		if(!(x != 0)) System.out.println("! (x != 0)");
+//		
+//		x = 1;
+//		System.out.printf("x = %d 일 때, 참인 것은%n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("!(x == 0)");
+//		if(!(x != 0)) System.out.println("!(x != 0)");
+		
+//		Ex4_3
+//		System.out.print("숫자를 하나 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		int input = scanner.nextInt();
+//		
+//		if(input == 0) {
+//			System.out.println("입력하신 숫자는 0입니다.");
+//		} else {
+//			System.out.println("입력하신 숫자는 0이 아닙니다.");
+//		}
+		
+//		Ex4_4
+//		int score = 0;
+//		char grade = ' ';
+//		
+//		System.out.print("점수를 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//		} else if(score >= 80) {
+//			grade = 'B';
+//		} else if(score >= 70) {
+//			grade = 'C';
+//		} else {
+//			grade = 'D';
+//		}
+//		System.out.println("당신의 학점은 " + grade + "입니다.");
+		
+//		Ex4_5
+		
+//		int score = 0;
+//		char grade = ' ', opt = '0';
+//		
+//		System.out.print("점수를 입력해주세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		System.out.printf("당신의 점수는 %d입니다.%n", score);
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//			if(score >= 98) {
+//				opt = '+';
+//			} else if(score < 94) {
+//				opt = '-';
+//			}
+//		} else if(score >= 80) {
+//			grade = 'B';
+//			if(score >= 88) {
+//				opt = '+';
+//			} else if(score < 84) {
+//				opt = '-';
+//			}
+//		} else {
+//			grade = 'C';
+//		}
+//		System.out.printf("당신의 학점은 %c%c입니다.%n", grade, opt);
+		
+//		Ex4_6
+//		System.out.print("현재 월을 입력하세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		int month = scanner.nextInt();
+//		
+//		switch(month) {
+//		case 3:
+//		case 4:
+//		case 5:
+//			System.out.println("현재의 계절은 봄입니다.");
+//			break;
+//		case 6: case 7: case 8:
+//			System.out.println("현재의 계절은 여름입니다.");
+//			break;
+//		case 9: case 10: case 11:
+//			System.out.println("현재의 계절은 가을입니다.");
+//			break;
+//		default:
+//			System.out.println("현재의 계절은 겨울입니다.");
+//		}
+		
+//		Ex4_7
+//		int num = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			num = (int)(Math.random() * 6) + 1;
+//			System.out.println(num);
+//		}
+		
+//		Ex4_8
+//		for(int i = 1; i <= 3; i++) {
+//			System.out.println("Hello");
+//		}
+		
+//		Ex4_9
+//		for(int i = 1; i <= 5; i++)
+//			System.out.println(i);
+//				
+//		for(int i = 1; i <= 5; i++)
+//			System.out.print(i);
+//		
+//		System.out.println();
+		
+//		Ex4_10
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			sum += i;
+//			System.out.printf("1부터 %2d 까지의 합 : %2d%n", i, sum);
+//		}
+		
+//		Ex4_11
+//		for(int i = 1; i <= 5; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+//		Ex4_12
+//		int i = 5;
+//		
+//		while(i-- != 0) {
+//			System.out.println(i + " - I can do it.");
+//		}
+		
+//		Ex4_13
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(sum <= 100) {
+//			System.out.printf("%d - %d%n", i, sum);
+//			sum += ++i;
+//		}
+		
+//		Ex4_14
+//		int num = 0, sum = 0;
+//		System.out.print("숫자를 입력하세요.(예 : 12345)>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		String tmp = scanner.nextLine();
+//		num = Integer.parseInt(tmp);
+//		
+//		while(num != 0) {
+//			sum += num % 10;
+//			System.out.printf("sum = %3d num = %d%n", sum, num);
+//			
+//			num /= 10;
+//		}
+//		System.out.println("각 자리수의 합 : " + sum);
+		
+//		Ex4_15
+//		int input = 0, answer = 0;
+//		
+//		answer = (int)(Math.random() * 100) + 1;
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		do {
+//			System.out.print("1과 100사이의 정수를 입력하세요.>");
+//			input = scanner.nextInt();
+//			
+//			if(input > answer) {
+//				System.out.println("더 작은 수로 다시 시도해보세요.");
+//			} else if(input < answer) {
+//				System.out.println("더 큰 수로 다시 시도해보세요.");
+//			}
+//		} while(input != answer);
+//		System.out.println("정답 입니다.");
+		
+//		Ex4_16
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(true) {
+//			if(sum > 100)
+//				break;
+//			++i;
+//			sum += i;
+//		}
+//		System.out.println("i = " + i);
+//		System.out.println("sum = " + sum);
+		
+//		Ex4_17
+//		for(int i = 0; i <= 10; i++) {
+//			if(i % 3 == 0)
+//				continue;
+//			System.out.println(i);
+//		}
+		
+//		Ex4_18
+//		int menu = 0;
+//		int num = 0;
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		while(true) {
+//			System.out.println("1() square");
+//			System.out.println("2() square root");
+//			System.out.println("(3) log");
+//			System.out.println("원하는 메뉴(1~3)를 선택하세요.(종료:0)>");
+//			
+//			String tmp = scanner.nextLine();
+//			menu = Integer.parseInt(tmp);
+//			
+//			if(menu == 0) {
+//				System.out.println("프로그램을 종료합니다.");
+//				break;
+//			} else if(!(1 <= menu && menu <= 3)) {
+//				System.out.println("메뉴를 잘못 선택하셨습니다.(죵료는 0)");
+//				continue;
+//			}
+//			System.out.println("선택하신 메뉴는 " + menu + "번입니다.");
+//		}
+		
+//		Ex4_19
+//		Loop1 : for(int i = 2; i <= 9; i++) {
+//			for(int j = 1; j <= 9; j++) {
+//				if(j == 5)
+//					break Loop1;
+//				System.out.println(i + "*" + j + "=" + i*j);
+//			}
+//			System.out.println();
+//		}
+		
+//		연습문제 4-2
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 20; i++) {
+//			if(i % 2 != 0 && i % 3 != 0)
+//			sum += i;
+//		}
+//		System.out.println(sum);
+		
+//		연습문제 4-3
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				sum += j;
+//			}
+//		}
+//		System.out.println(sum);
+		
+//		답
+//		부분합 / 총합 계산
+//		int sum = 0;
+//		int totalsum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+////			1st 부분 합
+//			sum = sum + i;
+////			2st 부분 합을 다 더한 총합
+//			totalsum = totalsum + sum;
+////			로깅 디버깅 방법
+////			System.out.println("i = " + i);
+////			System.out.println("sum = " + sum);
+////			System.out.println("totalsum = " + totalsum);
+//		}
+//		System.out.println("totalsum = " + totalsum);
+		
+//		연습문제 4-4
+//		답
+//		int sum = 0; // 총합을 저장할 변수
+//		int s = 1; // 값의 부호를 바꿔주는 변수
+//		int num = 0; // 총 몇번 계산했는지 카운트 하는 변수
+//		int i = 1; // while문 카운트 변수
+//		
+//		while(true) {
+////			탈출 조건 sum >= 100 보다 커지면
+//			if(sum >= 100) {
+//				break;
+//			}
+//			num = s * i;
+////			짝수마다 음수로 바꿔주기
+//			s = -s;
+////			누적합(양수 + 음수) >= 100 탈출
+//			sum = sum + num;
+//			i++;
+//		}
+//		System.out.println("num = " + num);
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-5
+//		int i = 0;
+//		while(i <= 10) {
+//			int j = 0;
+//			while(j <= i) {
+//				j++;
+//				System.out.print("*");
+//			}
+//			i++;
+//			System.out.println();
+//		}
+		
+//		연습문제 4-6
+//		for(int i = 1; i <= 6; i++) {
+//			for(int j = 1; j <= 6; j++) {
+//				if((i + j) == 6) {
+//					System.out.println(i + "+" + j);
+//				}
+//			}
+//		}
+		
+//		연습문제 4-7
+//		String str = "12345";
+//		int sum = 0;
+//		
+//		for(int i = 0; i < str.length(); i++) {
+//			sum += str.charAt(i) - '0'; // i = 0이라고 가정, '1' - '0' = 1(아스키 코드)
+//		}
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-8
+//		int value = ((int)(Math.random() * 6) + 1);
+//		
+//		System.out.println("value : " + value);
+		
+//		연습문제 4-9
+//		int num = 12345;
+//		int sum = 0;
+//		
+//		int number = num % 10;
+//		int ten = (num / 10) % 10;
+//		int hun = (num / 100) % 10;
+//		int tho = (num / 1000) % 10;
+//		int mil = (num / 10000);
+//		
+//		sum = number + ten + hun + tho + mil;
+//		System.out.println("sum = " + sum);
+//		답
+		int num = 12345;
+		int sum = 0;
+		
+//		나머지 연산자를 이용해서 계산하는 방법
+		while(num > 0) {
+//			나머지 연산 자리수 자르기
+			sum = sum + (num % 10);
+			num / 10 값을 반복
+		}
+		
+//		연습문제 4-10
+		int answer = (int)(Math.random() * 100) + 1;
+		int input = 0;
+		int count = 0;
+		
+		java.util.Scanner s = new java.util.Scanner(System.in);
+		
+		do {
+			count++;
+			System.out.print("1과 100사이의 값을 입력하세요 : ");
+			input = s.nextInt();
+			
+			if(answer > input) {
+				System.out.println("더 큰 수를 입력하세요.");
+				continue;
+			} else if(answer < input) {
+				System.out.println("더 작은 수를 입력하세요.");
+				continue;
+			} else {
+				System.out.println("정답이다 이 씨발롬아");
+				System.out.println("시도 횟수는 " + count + "임");
+				break;
+			}
+		} while(true);
+		
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2022-04-08 17:38:36.458
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2022-04-08 17:38:36.459
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2022-04-08 17:38:36.559
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package ex;
+
+import java.util.Scanner;
+
+public class Ex4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Ex4_1
+//		int score = 80;
+//		
+//		if(score > 60) {
+//			System.out.println("합격입니다.");
+//		}
+		
+//		Ex4_2
+//		int x = 0;
+//		System.out.printf("x = %d 일 때, 참인 것은 %n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("! (x == 0)");
+//		if(!(x != 0)) System.out.println("! (x != 0)");
+//		
+//		x = 1;
+//		System.out.printf("x = %d 일 때, 참인 것은%n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("!(x == 0)");
+//		if(!(x != 0)) System.out.println("!(x != 0)");
+		
+//		Ex4_3
+//		System.out.print("숫자를 하나 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		int input = scanner.nextInt();
+//		
+//		if(input == 0) {
+//			System.out.println("입력하신 숫자는 0입니다.");
+//		} else {
+//			System.out.println("입력하신 숫자는 0이 아닙니다.");
+//		}
+		
+//		Ex4_4
+//		int score = 0;
+//		char grade = ' ';
+//		
+//		System.out.print("점수를 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//		} else if(score >= 80) {
+//			grade = 'B';
+//		} else if(score >= 70) {
+//			grade = 'C';
+//		} else {
+//			grade = 'D';
+//		}
+//		System.out.println("당신의 학점은 " + grade + "입니다.");
+		
+//		Ex4_5
+		
+//		int score = 0;
+//		char grade = ' ', opt = '0';
+//		
+//		System.out.print("점수를 입력해주세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		System.out.printf("당신의 점수는 %d입니다.%n", score);
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//			if(score >= 98) {
+//				opt = '+';
+//			} else if(score < 94) {
+//				opt = '-';
+//			}
+//		} else if(score >= 80) {
+//			grade = 'B';
+//			if(score >= 88) {
+//				opt = '+';
+//			} else if(score < 84) {
+//				opt = '-';
+//			}
+//		} else {
+//			grade = 'C';
+//		}
+//		System.out.printf("당신의 학점은 %c%c입니다.%n", grade, opt);
+		
+//		Ex4_6
+//		System.out.print("현재 월을 입력하세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		int month = scanner.nextInt();
+//		
+//		switch(month) {
+//		case 3:
+//		case 4:
+//		case 5:
+//			System.out.println("현재의 계절은 봄입니다.");
+//			break;
+//		case 6: case 7: case 8:
+//			System.out.println("현재의 계절은 여름입니다.");
+//			break;
+//		case 9: case 10: case 11:
+//			System.out.println("현재의 계절은 가을입니다.");
+//			break;
+//		default:
+//			System.out.println("현재의 계절은 겨울입니다.");
+//		}
+		
+//		Ex4_7
+//		int num = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			num = (int)(Math.random() * 6) + 1;
+//			System.out.println(num);
+//		}
+		
+//		Ex4_8
+//		for(int i = 1; i <= 3; i++) {
+//			System.out.println("Hello");
+//		}
+		
+//		Ex4_9
+//		for(int i = 1; i <= 5; i++)
+//			System.out.println(i);
+//				
+//		for(int i = 1; i <= 5; i++)
+//			System.out.print(i);
+//		
+//		System.out.println();
+		
+//		Ex4_10
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			sum += i;
+//			System.out.printf("1부터 %2d 까지의 합 : %2d%n", i, sum);
+//		}
+		
+//		Ex4_11
+//		for(int i = 1; i <= 5; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+//		Ex4_12
+//		int i = 5;
+//		
+//		while(i-- != 0) {
+//			System.out.println(i + " - I can do it.");
+//		}
+		
+//		Ex4_13
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(sum <= 100) {
+//			System.out.printf("%d - %d%n", i, sum);
+//			sum += ++i;
+//		}
+		
+//		Ex4_14
+//		int num = 0, sum = 0;
+//		System.out.print("숫자를 입력하세요.(예 : 12345)>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		String tmp = scanner.nextLine();
+//		num = Integer.parseInt(tmp);
+//		
+//		while(num != 0) {
+//			sum += num % 10;
+//			System.out.printf("sum = %3d num = %d%n", sum, num);
+//			
+//			num /= 10;
+//		}
+//		System.out.println("각 자리수의 합 : " + sum);
+		
+//		Ex4_15
+//		int input = 0, answer = 0;
+//		
+//		answer = (int)(Math.random() * 100) + 1;
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		do {
+//			System.out.print("1과 100사이의 정수를 입력하세요.>");
+//			input = scanner.nextInt();
+//			
+//			if(input > answer) {
+//				System.out.println("더 작은 수로 다시 시도해보세요.");
+//			} else if(input < answer) {
+//				System.out.println("더 큰 수로 다시 시도해보세요.");
+//			}
+//		} while(input != answer);
+//		System.out.println("정답 입니다.");
+		
+//		Ex4_16
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(true) {
+//			if(sum > 100)
+//				break;
+//			++i;
+//			sum += i;
+//		}
+//		System.out.println("i = " + i);
+//		System.out.println("sum = " + sum);
+		
+//		Ex4_17
+//		for(int i = 0; i <= 10; i++) {
+//			if(i % 3 == 0)
+//				continue;
+//			System.out.println(i);
+//		}
+		
+//		Ex4_18
+//		int menu = 0;
+//		int num = 0;
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		while(true) {
+//			System.out.println("1() square");
+//			System.out.println("2() square root");
+//			System.out.println("(3) log");
+//			System.out.println("원하는 메뉴(1~3)를 선택하세요.(종료:0)>");
+//			
+//			String tmp = scanner.nextLine();
+//			menu = Integer.parseInt(tmp);
+//			
+//			if(menu == 0) {
+//				System.out.println("프로그램을 종료합니다.");
+//				break;
+//			} else if(!(1 <= menu && menu <= 3)) {
+//				System.out.println("메뉴를 잘못 선택하셨습니다.(죵료는 0)");
+//				continue;
+//			}
+//			System.out.println("선택하신 메뉴는 " + menu + "번입니다.");
+//		}
+		
+//		Ex4_19
+//		Loop1 : for(int i = 2; i <= 9; i++) {
+//			for(int j = 1; j <= 9; j++) {
+//				if(j == 5)
+//					break Loop1;
+//				System.out.println(i + "*" + j + "=" + i*j);
+//			}
+//			System.out.println();
+//		}
+		
+//		연습문제 4-2
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 20; i++) {
+//			if(i % 2 != 0 && i % 3 != 0)
+//			sum += i;
+//		}
+//		System.out.println(sum);
+		
+//		연습문제 4-3
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				sum += j;
+//			}
+//		}
+//		System.out.println(sum);
+		
+//		답
+//		부분합 / 총합 계산
+//		int sum = 0;
+//		int totalsum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+////			1st 부분 합
+//			sum = sum + i;
+////			2st 부분 합을 다 더한 총합
+//			totalsum = totalsum + sum;
+////			로깅 디버깅 방법
+////			System.out.println("i = " + i);
+////			System.out.println("sum = " + sum);
+////			System.out.println("totalsum = " + totalsum);
+//		}
+//		System.out.println("totalsum = " + totalsum);
+		
+//		연습문제 4-4
+//		답
+//		int sum = 0; // 총합을 저장할 변수
+//		int s = 1; // 값의 부호를 바꿔주는 변수
+//		int num = 0; // 총 몇번 계산했는지 카운트 하는 변수
+//		int i = 1; // while문 카운트 변수
+//		
+//		while(true) {
+////			탈출 조건 sum >= 100 보다 커지면
+//			if(sum >= 100) {
+//				break;
+//			}
+//			num = s * i;
+////			짝수마다 음수로 바꿔주기
+//			s = -s;
+////			누적합(양수 + 음수) >= 100 탈출
+//			sum = sum + num;
+//			i++;
+//		}
+//		System.out.println("num = " + num);
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-5
+//		int i = 0;
+//		while(i <= 10) {
+//			int j = 0;
+//			while(j <= i) {
+//				j++;
+//				System.out.print("*");
+//			}
+//			i++;
+//			System.out.println();
+//		}
+		
+//		연습문제 4-6
+//		for(int i = 1; i <= 6; i++) {
+//			for(int j = 1; j <= 6; j++) {
+//				if((i + j) == 6) {
+//					System.out.println(i + "+" + j);
+//				}
+//			}
+//		}
+		
+//		연습문제 4-7
+//		String str = "12345";
+//		int sum = 0;
+//		
+//		for(int i = 0; i < str.length(); i++) {
+//			sum += str.charAt(i) - '0'; // i = 0이라고 가정, '1' - '0' = 1(아스키 코드)
+//		}
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-8
+//		int value = ((int)(Math.random() * 6) + 1);
+//		
+//		System.out.println("value : " + value);
+		
+//		연습문제 4-9
+//		int num = 12345;
+//		int sum = 0;
+//		
+//		int number = num % 10;
+//		int ten = (num / 10) % 10;
+//		int hun = (num / 100) % 10;
+//		int tho = (num / 1000) % 10;
+//		int mil = (num / 10000);
+//		
+//		sum = number + ten + hun + tho + mil;
+//		System.out.println("sum = " + sum);
+//		답
+		int num = 12345;
+		int sum = 0;
+		
+//		나머지 연산자를 이용해서 계산하는 방법
+		while(num > 0) {
+//			나머지 연산 자리수 자르기
+			sum = sum + (num % 10);
+			num / 10 값을 반복
+		}
+		
+//		연습문제 4-10
+		int answer = (int)(Math.random() * 100) + 1;
+		int input = 0;
+		int count = 0;
+		
+		java.util.Scanner s = new java.util.Scanner(System.in);
+		
+		do {
+			count++;
+			System.out.print("1과 100사이의 값을 입력하세요 : ");
+			input = s.nextInt();
+			
+			if(answer > input) {
+				System.out.println("더 큰 수를 입력하세요.");
+				continue;
+			} else if(answer < input) {
+				System.out.println("더 작은 수를 입력하세요.");
+				continue;
+			} else {
+				System.out.println("정답이다 이 씨발롬아");
+				System.out.println("시도 횟수는 " + count + "임");
+				break;
+			}
+		} while(true);
+		
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2022-04-08 17:38:36.561
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2022-04-08 17:38:36.562
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2022-04-08 17:38:39.533
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package ex;
+
+import java.util.Scanner;
+
+public class Ex4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Ex4_1
+//		int score = 80;
+//		
+//		if(score > 60) {
+//			System.out.println("합격입니다.");
+//		}
+		
+//		Ex4_2
+//		int x = 0;
+//		System.out.printf("x = %d 일 때, 참인 것은 %n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("! (x == 0)");
+//		if(!(x != 0)) System.out.println("! (x != 0)");
+//		
+//		x = 1;
+//		System.out.printf("x = %d 일 때, 참인 것은%n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("!(x == 0)");
+//		if(!(x != 0)) System.out.println("!(x != 0)");
+		
+//		Ex4_3
+//		System.out.print("숫자를 하나 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		int input = scanner.nextInt();
+//		
+//		if(input == 0) {
+//			System.out.println("입력하신 숫자는 0입니다.");
+//		} else {
+//			System.out.println("입력하신 숫자는 0이 아닙니다.");
+//		}
+		
+//		Ex4_4
+//		int score = 0;
+//		char grade = ' ';
+//		
+//		System.out.print("점수를 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//		} else if(score >= 80) {
+//			grade = 'B';
+//		} else if(score >= 70) {
+//			grade = 'C';
+//		} else {
+//			grade = 'D';
+//		}
+//		System.out.println("당신의 학점은 " + grade + "입니다.");
+		
+//		Ex4_5
+		
+//		int score = 0;
+//		char grade = ' ', opt = '0';
+//		
+//		System.out.print("점수를 입력해주세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		System.out.printf("당신의 점수는 %d입니다.%n", score);
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//			if(score >= 98) {
+//				opt = '+';
+//			} else if(score < 94) {
+//				opt = '-';
+//			}
+//		} else if(score >= 80) {
+//			grade = 'B';
+//			if(score >= 88) {
+//				opt = '+';
+//			} else if(score < 84) {
+//				opt = '-';
+//			}
+//		} else {
+//			grade = 'C';
+//		}
+//		System.out.printf("당신의 학점은 %c%c입니다.%n", grade, opt);
+		
+//		Ex4_6
+//		System.out.print("현재 월을 입력하세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		int month = scanner.nextInt();
+//		
+//		switch(month) {
+//		case 3:
+//		case 4:
+//		case 5:
+//			System.out.println("현재의 계절은 봄입니다.");
+//			break;
+//		case 6: case 7: case 8:
+//			System.out.println("현재의 계절은 여름입니다.");
+//			break;
+//		case 9: case 10: case 11:
+//			System.out.println("현재의 계절은 가을입니다.");
+//			break;
+//		default:
+//			System.out.println("현재의 계절은 겨울입니다.");
+//		}
+		
+//		Ex4_7
+//		int num = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			num = (int)(Math.random() * 6) + 1;
+//			System.out.println(num);
+//		}
+		
+//		Ex4_8
+//		for(int i = 1; i <= 3; i++) {
+//			System.out.println("Hello");
+//		}
+		
+//		Ex4_9
+//		for(int i = 1; i <= 5; i++)
+//			System.out.println(i);
+//				
+//		for(int i = 1; i <= 5; i++)
+//			System.out.print(i);
+//		
+//		System.out.println();
+		
+//		Ex4_10
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			sum += i;
+//			System.out.printf("1부터 %2d 까지의 합 : %2d%n", i, sum);
+//		}
+		
+//		Ex4_11
+//		for(int i = 1; i <= 5; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+//		Ex4_12
+//		int i = 5;
+//		
+//		while(i-- != 0) {
+//			System.out.println(i + " - I can do it.");
+//		}
+		
+//		Ex4_13
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(sum <= 100) {
+//			System.out.printf("%d - %d%n", i, sum);
+//			sum += ++i;
+//		}
+		
+//		Ex4_14
+//		int num = 0, sum = 0;
+//		System.out.print("숫자를 입력하세요.(예 : 12345)>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		String tmp = scanner.nextLine();
+//		num = Integer.parseInt(tmp);
+//		
+//		while(num != 0) {
+//			sum += num % 10;
+//			System.out.printf("sum = %3d num = %d%n", sum, num);
+//			
+//			num /= 10;
+//		}
+//		System.out.println("각 자리수의 합 : " + sum);
+		
+//		Ex4_15
+//		int input = 0, answer = 0;
+//		
+//		answer = (int)(Math.random() * 100) + 1;
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		do {
+//			System.out.print("1과 100사이의 정수를 입력하세요.>");
+//			input = scanner.nextInt();
+//			
+//			if(input > answer) {
+//				System.out.println("더 작은 수로 다시 시도해보세요.");
+//			} else if(input < answer) {
+//				System.out.println("더 큰 수로 다시 시도해보세요.");
+//			}
+//		} while(input != answer);
+//		System.out.println("정답 입니다.");
+		
+//		Ex4_16
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(true) {
+//			if(sum > 100)
+//				break;
+//			++i;
+//			sum += i;
+//		}
+//		System.out.println("i = " + i);
+//		System.out.println("sum = " + sum);
+		
+//		Ex4_17
+//		for(int i = 0; i <= 10; i++) {
+//			if(i % 3 == 0)
+//				continue;
+//			System.out.println(i);
+//		}
+		
+//		Ex4_18
+//		int menu = 0;
+//		int num = 0;
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		while(true) {
+//			System.out.println("1() square");
+//			System.out.println("2() square root");
+//			System.out.println("(3) log");
+//			System.out.println("원하는 메뉴(1~3)를 선택하세요.(종료:0)>");
+//			
+//			String tmp = scanner.nextLine();
+//			menu = Integer.parseInt(tmp);
+//			
+//			if(menu == 0) {
+//				System.out.println("프로그램을 종료합니다.");
+//				break;
+//			} else if(!(1 <= menu && menu <= 3)) {
+//				System.out.println("메뉴를 잘못 선택하셨습니다.(죵료는 0)");
+//				continue;
+//			}
+//			System.out.println("선택하신 메뉴는 " + menu + "번입니다.");
+//		}
+		
+//		Ex4_19
+//		Loop1 : for(int i = 2; i <= 9; i++) {
+//			for(int j = 1; j <= 9; j++) {
+//				if(j == 5)
+//					break Loop1;
+//				System.out.println(i + "*" + j + "=" + i*j);
+//			}
+//			System.out.println();
+//		}
+		
+//		연습문제 4-2
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 20; i++) {
+//			if(i % 2 != 0 && i % 3 != 0)
+//			sum += i;
+//		}
+//		System.out.println(sum);
+		
+//		연습문제 4-3
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				sum += j;
+//			}
+//		}
+//		System.out.println(sum);
+		
+//		답
+//		부분합 / 총합 계산
+//		int sum = 0;
+//		int totalsum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+////			1st 부분 합
+//			sum = sum + i;
+////			2st 부분 합을 다 더한 총합
+//			totalsum = totalsum + sum;
+////			로깅 디버깅 방법
+////			System.out.println("i = " + i);
+////			System.out.println("sum = " + sum);
+////			System.out.println("totalsum = " + totalsum);
+//		}
+//		System.out.println("totalsum = " + totalsum);
+		
+//		연습문제 4-4
+//		답
+//		int sum = 0; // 총합을 저장할 변수
+//		int s = 1; // 값의 부호를 바꿔주는 변수
+//		int num = 0; // 총 몇번 계산했는지 카운트 하는 변수
+//		int i = 1; // while문 카운트 변수
+//		
+//		while(true) {
+////			탈출 조건 sum >= 100 보다 커지면
+//			if(sum >= 100) {
+//				break;
+//			}
+//			num = s * i;
+////			짝수마다 음수로 바꿔주기
+//			s = -s;
+////			누적합(양수 + 음수) >= 100 탈출
+//			sum = sum + num;
+//			i++;
+//		}
+//		System.out.println("num = " + num);
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-5
+//		int i = 0;
+//		while(i <= 10) {
+//			int j = 0;
+//			while(j <= i) {
+//				j++;
+//				System.out.print("*");
+//			}
+//			i++;
+//			System.out.println();
+//		}
+		
+//		연습문제 4-6
+//		for(int i = 1; i <= 6; i++) {
+//			for(int j = 1; j <= 6; j++) {
+//				if((i + j) == 6) {
+//					System.out.println(i + "+" + j);
+//				}
+//			}
+//		}
+		
+//		연습문제 4-7
+//		String str = "12345";
+//		int sum = 0;
+//		
+//		for(int i = 0; i < str.length(); i++) {
+//			sum += str.charAt(i) - '0'; // i = 0이라고 가정, '1' - '0' = 1(아스키 코드)
+//		}
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-8
+//		int value = ((int)(Math.random() * 6) + 1);
+//		
+//		System.out.println("value : " + value);
+		
+//		연습문제 4-9
+//		int num = 12345;
+//		int sum = 0;
+//		
+//		int number = num % 10;
+//		int ten = (num / 10) % 10;
+//		int hun = (num / 100) % 10;
+//		int tho = (num / 1000) % 10;
+//		int mil = (num / 10000);
+//		
+//		sum = number + ten + hun + tho + mil;
+//		System.out.println("sum = " + sum);
+//		답
+		int num = 12345;
+		int sum = 0;
+		
+//		나머지 연산자를 이용해서 계산하는 방법
+		while(num > 0) {
+//			나머지 연산 자리수 자르기
+			sum = sum + (num % 10);
+			num / 10 값을 반복
+		}
+		
+//		연습문제 4-10
+		int answer = (int)(Math.random() * 100) + 1;
+		int input = 0;
+		int count = 0;
+		
+		java.util.Scanner s = new java.util.Scanner(System.in);
+		
+		do {
+			count++;
+			System.out.print("1과 100사이의 값을 입력하세요 : ");
+			input = s.nextInt();
+			
+			if(answer > input) {
+				System.out.println("더 큰 수를 입력하세요.");
+				continue;
+			} else if(answer < input) {
+				System.out.println("더 작은 수를 입력하세요.");
+				continue;
+			} else {
+				System.out.println("정답이다 이 씨발롬아");
+				System.out.println("시도 횟수는 " + count + "임");
+				break;
+			}
+		} while(true);
+		
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2022-04-08 17:38:39.535
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2022-04-08 17:38:39.536
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2022-04-08 17:38:39.617
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package ex;
+
+import java.util.Scanner;
+
+public class Ex4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Ex4_1
+//		int score = 80;
+//		
+//		if(score > 60) {
+//			System.out.println("합격입니다.");
+//		}
+		
+//		Ex4_2
+//		int x = 0;
+//		System.out.printf("x = %d 일 때, 참인 것은 %n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("! (x == 0)");
+//		if(!(x != 0)) System.out.println("! (x != 0)");
+//		
+//		x = 1;
+//		System.out.printf("x = %d 일 때, 참인 것은%n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("!(x == 0)");
+//		if(!(x != 0)) System.out.println("!(x != 0)");
+		
+//		Ex4_3
+//		System.out.print("숫자를 하나 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		int input = scanner.nextInt();
+//		
+//		if(input == 0) {
+//			System.out.println("입력하신 숫자는 0입니다.");
+//		} else {
+//			System.out.println("입력하신 숫자는 0이 아닙니다.");
+//		}
+		
+//		Ex4_4
+//		int score = 0;
+//		char grade = ' ';
+//		
+//		System.out.print("점수를 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//		} else if(score >= 80) {
+//			grade = 'B';
+//		} else if(score >= 70) {
+//			grade = 'C';
+//		} else {
+//			grade = 'D';
+//		}
+//		System.out.println("당신의 학점은 " + grade + "입니다.");
+		
+//		Ex4_5
+		
+//		int score = 0;
+//		char grade = ' ', opt = '0';
+//		
+//		System.out.print("점수를 입력해주세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		System.out.printf("당신의 점수는 %d입니다.%n", score);
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//			if(score >= 98) {
+//				opt = '+';
+//			} else if(score < 94) {
+//				opt = '-';
+//			}
+//		} else if(score >= 80) {
+//			grade = 'B';
+//			if(score >= 88) {
+//				opt = '+';
+//			} else if(score < 84) {
+//				opt = '-';
+//			}
+//		} else {
+//			grade = 'C';
+//		}
+//		System.out.printf("당신의 학점은 %c%c입니다.%n", grade, opt);
+		
+//		Ex4_6
+//		System.out.print("현재 월을 입력하세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		int month = scanner.nextInt();
+//		
+//		switch(month) {
+//		case 3:
+//		case 4:
+//		case 5:
+//			System.out.println("현재의 계절은 봄입니다.");
+//			break;
+//		case 6: case 7: case 8:
+//			System.out.println("현재의 계절은 여름입니다.");
+//			break;
+//		case 9: case 10: case 11:
+//			System.out.println("현재의 계절은 가을입니다.");
+//			break;
+//		default:
+//			System.out.println("현재의 계절은 겨울입니다.");
+//		}
+		
+//		Ex4_7
+//		int num = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			num = (int)(Math.random() * 6) + 1;
+//			System.out.println(num);
+//		}
+		
+//		Ex4_8
+//		for(int i = 1; i <= 3; i++) {
+//			System.out.println("Hello");
+//		}
+		
+//		Ex4_9
+//		for(int i = 1; i <= 5; i++)
+//			System.out.println(i);
+//				
+//		for(int i = 1; i <= 5; i++)
+//			System.out.print(i);
+//		
+//		System.out.println();
+		
+//		Ex4_10
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			sum += i;
+//			System.out.printf("1부터 %2d 까지의 합 : %2d%n", i, sum);
+//		}
+		
+//		Ex4_11
+//		for(int i = 1; i <= 5; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+//		Ex4_12
+//		int i = 5;
+//		
+//		while(i-- != 0) {
+//			System.out.println(i + " - I can do it.");
+//		}
+		
+//		Ex4_13
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(sum <= 100) {
+//			System.out.printf("%d - %d%n", i, sum);
+//			sum += ++i;
+//		}
+		
+//		Ex4_14
+//		int num = 0, sum = 0;
+//		System.out.print("숫자를 입력하세요.(예 : 12345)>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		String tmp = scanner.nextLine();
+//		num = Integer.parseInt(tmp);
+//		
+//		while(num != 0) {
+//			sum += num % 10;
+//			System.out.printf("sum = %3d num = %d%n", sum, num);
+//			
+//			num /= 10;
+//		}
+//		System.out.println("각 자리수의 합 : " + sum);
+		
+//		Ex4_15
+//		int input = 0, answer = 0;
+//		
+//		answer = (int)(Math.random() * 100) + 1;
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		do {
+//			System.out.print("1과 100사이의 정수를 입력하세요.>");
+//			input = scanner.nextInt();
+//			
+//			if(input > answer) {
+//				System.out.println("더 작은 수로 다시 시도해보세요.");
+//			} else if(input < answer) {
+//				System.out.println("더 큰 수로 다시 시도해보세요.");
+//			}
+//		} while(input != answer);
+//		System.out.println("정답 입니다.");
+		
+//		Ex4_16
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(true) {
+//			if(sum > 100)
+//				break;
+//			++i;
+//			sum += i;
+//		}
+//		System.out.println("i = " + i);
+//		System.out.println("sum = " + sum);
+		
+//		Ex4_17
+//		for(int i = 0; i <= 10; i++) {
+//			if(i % 3 == 0)
+//				continue;
+//			System.out.println(i);
+//		}
+		
+//		Ex4_18
+//		int menu = 0;
+//		int num = 0;
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		while(true) {
+//			System.out.println("1() square");
+//			System.out.println("2() square root");
+//			System.out.println("(3) log");
+//			System.out.println("원하는 메뉴(1~3)를 선택하세요.(종료:0)>");
+//			
+//			String tmp = scanner.nextLine();
+//			menu = Integer.parseInt(tmp);
+//			
+//			if(menu == 0) {
+//				System.out.println("프로그램을 종료합니다.");
+//				break;
+//			} else if(!(1 <= menu && menu <= 3)) {
+//				System.out.println("메뉴를 잘못 선택하셨습니다.(죵료는 0)");
+//				continue;
+//			}
+//			System.out.println("선택하신 메뉴는 " + menu + "번입니다.");
+//		}
+		
+//		Ex4_19
+//		Loop1 : for(int i = 2; i <= 9; i++) {
+//			for(int j = 1; j <= 9; j++) {
+//				if(j == 5)
+//					break Loop1;
+//				System.out.println(i + "*" + j + "=" + i*j);
+//			}
+//			System.out.println();
+//		}
+		
+//		연습문제 4-2
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 20; i++) {
+//			if(i % 2 != 0 && i % 3 != 0)
+//			sum += i;
+//		}
+//		System.out.println(sum);
+		
+//		연습문제 4-3
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				sum += j;
+//			}
+//		}
+//		System.out.println(sum);
+		
+//		답
+//		부분합 / 총합 계산
+//		int sum = 0;
+//		int totalsum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+////			1st 부분 합
+//			sum = sum + i;
+////			2st 부분 합을 다 더한 총합
+//			totalsum = totalsum + sum;
+////			로깅 디버깅 방법
+////			System.out.println("i = " + i);
+////			System.out.println("sum = " + sum);
+////			System.out.println("totalsum = " + totalsum);
+//		}
+//		System.out.println("totalsum = " + totalsum);
+		
+//		연습문제 4-4
+//		답
+//		int sum = 0; // 총합을 저장할 변수
+//		int s = 1; // 값의 부호를 바꿔주는 변수
+//		int num = 0; // 총 몇번 계산했는지 카운트 하는 변수
+//		int i = 1; // while문 카운트 변수
+//		
+//		while(true) {
+////			탈출 조건 sum >= 100 보다 커지면
+//			if(sum >= 100) {
+//				break;
+//			}
+//			num = s * i;
+////			짝수마다 음수로 바꿔주기
+//			s = -s;
+////			누적합(양수 + 음수) >= 100 탈출
+//			sum = sum + num;
+//			i++;
+//		}
+//		System.out.println("num = " + num);
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-5
+//		int i = 0;
+//		while(i <= 10) {
+//			int j = 0;
+//			while(j <= i) {
+//				j++;
+//				System.out.print("*");
+//			}
+//			i++;
+//			System.out.println();
+//		}
+		
+//		연습문제 4-6
+//		for(int i = 1; i <= 6; i++) {
+//			for(int j = 1; j <= 6; j++) {
+//				if((i + j) == 6) {
+//					System.out.println(i + "+" + j);
+//				}
+//			}
+//		}
+		
+//		연습문제 4-7
+//		String str = "12345";
+//		int sum = 0;
+//		
+//		for(int i = 0; i < str.length(); i++) {
+//			sum += str.charAt(i) - '0'; // i = 0이라고 가정, '1' - '0' = 1(아스키 코드)
+//		}
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-8
+//		int value = ((int)(Math.random() * 6) + 1);
+//		
+//		System.out.println("value : " + value);
+		
+//		연습문제 4-9
+//		int num = 12345;
+//		int sum = 0;
+//		
+//		int number = num % 10;
+//		int ten = (num / 10) % 10;
+//		int hun = (num / 100) % 10;
+//		int tho = (num / 1000) % 10;
+//		int mil = (num / 10000);
+//		
+//		sum = number + ten + hun + tho + mil;
+//		System.out.println("sum = " + sum);
+//		답
+		int num = 12345;
+		int sum = 0;
+		
+//		나머지 연산자를 이용해서 계산하는 방법
+		while(num > 0) {
+//			나머지 연산 자리수 자르기
+			sum = sum + (num % 10);
+			num / 10 값을 반복
+		}
+		
+//		연습문제 4-10
+		int answer = (int)(Math.random() * 100) + 1;
+		int input = 0;
+		int count = 0;
+		
+		java.util.Scanner s = new java.util.Scanner(System.in);
+		
+		do {
+			count++;
+			System.out.print("1과 100사이의 값을 입력하세요 : ");
+			input = s.nextInt();
+			
+			if(answer > input) {
+				System.out.println("더 큰 수를 입력하세요.");
+				continue;
+			} else if(answer < input) {
+				System.out.println("더 작은 수를 입력하세요.");
+				continue;
+			} else {
+				System.out.println("정답이다 이 씨발롬아");
+				System.out.println("시도 횟수는 " + count + "임");
+				break;
+			}
+		} while(true);
+		
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2022-04-08 17:38:39.621
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2022-04-08 17:38:39.622
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2022-04-08 17:38:40.727
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package ex;
+
+import java.util.Scanner;
+
+public class Ex4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Ex4_1
+//		int score = 80;
+//		
+//		if(score > 60) {
+//			System.out.println("합격입니다.");
+//		}
+		
+//		Ex4_2
+//		int x = 0;
+//		System.out.printf("x = %d 일 때, 참인 것은 %n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("! (x == 0)");
+//		if(!(x != 0)) System.out.println("! (x != 0)");
+//		
+//		x = 1;
+//		System.out.printf("x = %d 일 때, 참인 것은%n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("!(x == 0)");
+//		if(!(x != 0)) System.out.println("!(x != 0)");
+		
+//		Ex4_3
+//		System.out.print("숫자를 하나 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		int input = scanner.nextInt();
+//		
+//		if(input == 0) {
+//			System.out.println("입력하신 숫자는 0입니다.");
+//		} else {
+//			System.out.println("입력하신 숫자는 0이 아닙니다.");
+//		}
+		
+//		Ex4_4
+//		int score = 0;
+//		char grade = ' ';
+//		
+//		System.out.print("점수를 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//		} else if(score >= 80) {
+//			grade = 'B';
+//		} else if(score >= 70) {
+//			grade = 'C';
+//		} else {
+//			grade = 'D';
+//		}
+//		System.out.println("당신의 학점은 " + grade + "입니다.");
+		
+//		Ex4_5
+		
+//		int score = 0;
+//		char grade = ' ', opt = '0';
+//		
+//		System.out.print("점수를 입력해주세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		System.out.printf("당신의 점수는 %d입니다.%n", score);
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//			if(score >= 98) {
+//				opt = '+';
+//			} else if(score < 94) {
+//				opt = '-';
+//			}
+//		} else if(score >= 80) {
+//			grade = 'B';
+//			if(score >= 88) {
+//				opt = '+';
+//			} else if(score < 84) {
+//				opt = '-';
+//			}
+//		} else {
+//			grade = 'C';
+//		}
+//		System.out.printf("당신의 학점은 %c%c입니다.%n", grade, opt);
+		
+//		Ex4_6
+//		System.out.print("현재 월을 입력하세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		int month = scanner.nextInt();
+//		
+//		switch(month) {
+//		case 3:
+//		case 4:
+//		case 5:
+//			System.out.println("현재의 계절은 봄입니다.");
+//			break;
+//		case 6: case 7: case 8:
+//			System.out.println("현재의 계절은 여름입니다.");
+//			break;
+//		case 9: case 10: case 11:
+//			System.out.println("현재의 계절은 가을입니다.");
+//			break;
+//		default:
+//			System.out.println("현재의 계절은 겨울입니다.");
+//		}
+		
+//		Ex4_7
+//		int num = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			num = (int)(Math.random() * 6) + 1;
+//			System.out.println(num);
+//		}
+		
+//		Ex4_8
+//		for(int i = 1; i <= 3; i++) {
+//			System.out.println("Hello");
+//		}
+		
+//		Ex4_9
+//		for(int i = 1; i <= 5; i++)
+//			System.out.println(i);
+//				
+//		for(int i = 1; i <= 5; i++)
+//			System.out.print(i);
+//		
+//		System.out.println();
+		
+//		Ex4_10
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			sum += i;
+//			System.out.printf("1부터 %2d 까지의 합 : %2d%n", i, sum);
+//		}
+		
+//		Ex4_11
+//		for(int i = 1; i <= 5; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+//		Ex4_12
+//		int i = 5;
+//		
+//		while(i-- != 0) {
+//			System.out.println(i + " - I can do it.");
+//		}
+		
+//		Ex4_13
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(sum <= 100) {
+//			System.out.printf("%d - %d%n", i, sum);
+//			sum += ++i;
+//		}
+		
+//		Ex4_14
+//		int num = 0, sum = 0;
+//		System.out.print("숫자를 입력하세요.(예 : 12345)>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		String tmp = scanner.nextLine();
+//		num = Integer.parseInt(tmp);
+//		
+//		while(num != 0) {
+//			sum += num % 10;
+//			System.out.printf("sum = %3d num = %d%n", sum, num);
+//			
+//			num /= 10;
+//		}
+//		System.out.println("각 자리수의 합 : " + sum);
+		
+//		Ex4_15
+//		int input = 0, answer = 0;
+//		
+//		answer = (int)(Math.random() * 100) + 1;
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		do {
+//			System.out.print("1과 100사이의 정수를 입력하세요.>");
+//			input = scanner.nextInt();
+//			
+//			if(input > answer) {
+//				System.out.println("더 작은 수로 다시 시도해보세요.");
+//			} else if(input < answer) {
+//				System.out.println("더 큰 수로 다시 시도해보세요.");
+//			}
+//		} while(input != answer);
+//		System.out.println("정답 입니다.");
+		
+//		Ex4_16
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(true) {
+//			if(sum > 100)
+//				break;
+//			++i;
+//			sum += i;
+//		}
+//		System.out.println("i = " + i);
+//		System.out.println("sum = " + sum);
+		
+//		Ex4_17
+//		for(int i = 0; i <= 10; i++) {
+//			if(i % 3 == 0)
+//				continue;
+//			System.out.println(i);
+//		}
+		
+//		Ex4_18
+//		int menu = 0;
+//		int num = 0;
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		while(true) {
+//			System.out.println("1() square");
+//			System.out.println("2() square root");
+//			System.out.println("(3) log");
+//			System.out.println("원하는 메뉴(1~3)를 선택하세요.(종료:0)>");
+//			
+//			String tmp = scanner.nextLine();
+//			menu = Integer.parseInt(tmp);
+//			
+//			if(menu == 0) {
+//				System.out.println("프로그램을 종료합니다.");
+//				break;
+//			} else if(!(1 <= menu && menu <= 3)) {
+//				System.out.println("메뉴를 잘못 선택하셨습니다.(죵료는 0)");
+//				continue;
+//			}
+//			System.out.println("선택하신 메뉴는 " + menu + "번입니다.");
+//		}
+		
+//		Ex4_19
+//		Loop1 : for(int i = 2; i <= 9; i++) {
+//			for(int j = 1; j <= 9; j++) {
+//				if(j == 5)
+//					break Loop1;
+//				System.out.println(i + "*" + j + "=" + i*j);
+//			}
+//			System.out.println();
+//		}
+		
+//		연습문제 4-2
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 20; i++) {
+//			if(i % 2 != 0 && i % 3 != 0)
+//			sum += i;
+//		}
+//		System.out.println(sum);
+		
+//		연습문제 4-3
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				sum += j;
+//			}
+//		}
+//		System.out.println(sum);
+		
+//		답
+//		부분합 / 총합 계산
+//		int sum = 0;
+//		int totalsum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+////			1st 부분 합
+//			sum = sum + i;
+////			2st 부분 합을 다 더한 총합
+//			totalsum = totalsum + sum;
+////			로깅 디버깅 방법
+////			System.out.println("i = " + i);
+////			System.out.println("sum = " + sum);
+////			System.out.println("totalsum = " + totalsum);
+//		}
+//		System.out.println("totalsum = " + totalsum);
+		
+//		연습문제 4-4
+//		답
+//		int sum = 0; // 총합을 저장할 변수
+//		int s = 1; // 값의 부호를 바꿔주는 변수
+//		int num = 0; // 총 몇번 계산했는지 카운트 하는 변수
+//		int i = 1; // while문 카운트 변수
+//		
+//		while(true) {
+////			탈출 조건 sum >= 100 보다 커지면
+//			if(sum >= 100) {
+//				break;
+//			}
+//			num = s * i;
+////			짝수마다 음수로 바꿔주기
+//			s = -s;
+////			누적합(양수 + 음수) >= 100 탈출
+//			sum = sum + num;
+//			i++;
+//		}
+//		System.out.println("num = " + num);
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-5
+//		int i = 0;
+//		while(i <= 10) {
+//			int j = 0;
+//			while(j <= i) {
+//				j++;
+//				System.out.print("*");
+//			}
+//			i++;
+//			System.out.println();
+//		}
+		
+//		연습문제 4-6
+//		for(int i = 1; i <= 6; i++) {
+//			for(int j = 1; j <= 6; j++) {
+//				if((i + j) == 6) {
+//					System.out.println(i + "+" + j);
+//				}
+//			}
+//		}
+		
+//		연습문제 4-7
+//		String str = "12345";
+//		int sum = 0;
+//		
+//		for(int i = 0; i < str.length(); i++) {
+//			sum += str.charAt(i) - '0'; // i = 0이라고 가정, '1' - '0' = 1(아스키 코드)
+//		}
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-8
+//		int value = ((int)(Math.random() * 6) + 1);
+//		
+//		System.out.println("value : " + value);
+		
+//		연습문제 4-9
+//		int num = 12345;
+//		int sum = 0;
+//		
+//		int number = num % 10;
+//		int ten = (num / 10) % 10;
+//		int hun = (num / 100) % 10;
+//		int tho = (num / 1000) % 10;
+//		int mil = (num / 10000);
+//		
+//		sum = number + ten + hun + tho + mil;
+//		System.out.println("sum = " + sum);
+//		답
+		int num = 12345;
+		int sum = 0;
+		
+//		나머지 연산자를 이용해서 계산하는 방법
+		while(num > 0) {
+//			나머지 연산 자리수 자르기
+			sum = sum + (num % 10);
+			num / 10 값을 반복
+		}
+		
+//		연습문제 4-10
+		int answer = (int)(Math.random() * 100) + 1;
+		int input = 0;
+		int count = 0;
+		
+		java.util.Scanner s = new java.util.Scanner(System.in);
+		
+		do {
+			count++;
+			System.out.print("1과 100사이의 값을 입력하세요 : ");
+			input = s.nextInt();
+			
+			if(answer > input) {
+				System.out.println("더 큰 수를 입력하세요.");
+				continue;
+			} else if(answer < input) {
+				System.out.println("더 작은 수를 입력하세요.");
+				continue;
+			} else {
+				System.out.println("정답이다 이 씨발롬아");
+				System.out.println("시도 횟수는 " + count + "임");
+				break;
+			}
+		} while(true);
+		
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2022-04-08 17:38:40.730
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2022-04-08 17:38:40.731
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2022-04-08 17:38:42.079
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package ex;
+
+import java.util.Scanner;
+
+public class Ex4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Ex4_1
+//		int score = 80;
+//		
+//		if(score > 60) {
+//			System.out.println("합격입니다.");
+//		}
+		
+//		Ex4_2
+//		int x = 0;
+//		System.out.printf("x = %d 일 때, 참인 것은 %n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("! (x == 0)");
+//		if(!(x != 0)) System.out.println("! (x != 0)");
+//		
+//		x = 1;
+//		System.out.printf("x = %d 일 때, 참인 것은%n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("!(x == 0)");
+//		if(!(x != 0)) System.out.println("!(x != 0)");
+		
+//		Ex4_3
+//		System.out.print("숫자를 하나 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		int input = scanner.nextInt();
+//		
+//		if(input == 0) {
+//			System.out.println("입력하신 숫자는 0입니다.");
+//		} else {
+//			System.out.println("입력하신 숫자는 0이 아닙니다.");
+//		}
+		
+//		Ex4_4
+//		int score = 0;
+//		char grade = ' ';
+//		
+//		System.out.print("점수를 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//		} else if(score >= 80) {
+//			grade = 'B';
+//		} else if(score >= 70) {
+//			grade = 'C';
+//		} else {
+//			grade = 'D';
+//		}
+//		System.out.println("당신의 학점은 " + grade + "입니다.");
+		
+//		Ex4_5
+		
+//		int score = 0;
+//		char grade = ' ', opt = '0';
+//		
+//		System.out.print("점수를 입력해주세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		System.out.printf("당신의 점수는 %d입니다.%n", score);
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//			if(score >= 98) {
+//				opt = '+';
+//			} else if(score < 94) {
+//				opt = '-';
+//			}
+//		} else if(score >= 80) {
+//			grade = 'B';
+//			if(score >= 88) {
+//				opt = '+';
+//			} else if(score < 84) {
+//				opt = '-';
+//			}
+//		} else {
+//			grade = 'C';
+//		}
+//		System.out.printf("당신의 학점은 %c%c입니다.%n", grade, opt);
+		
+//		Ex4_6
+//		System.out.print("현재 월을 입력하세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		int month = scanner.nextInt();
+//		
+//		switch(month) {
+//		case 3:
+//		case 4:
+//		case 5:
+//			System.out.println("현재의 계절은 봄입니다.");
+//			break;
+//		case 6: case 7: case 8:
+//			System.out.println("현재의 계절은 여름입니다.");
+//			break;
+//		case 9: case 10: case 11:
+//			System.out.println("현재의 계절은 가을입니다.");
+//			break;
+//		default:
+//			System.out.println("현재의 계절은 겨울입니다.");
+//		}
+		
+//		Ex4_7
+//		int num = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			num = (int)(Math.random() * 6) + 1;
+//			System.out.println(num);
+//		}
+		
+//		Ex4_8
+//		for(int i = 1; i <= 3; i++) {
+//			System.out.println("Hello");
+//		}
+		
+//		Ex4_9
+//		for(int i = 1; i <= 5; i++)
+//			System.out.println(i);
+//				
+//		for(int i = 1; i <= 5; i++)
+//			System.out.print(i);
+//		
+//		System.out.println();
+		
+//		Ex4_10
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			sum += i;
+//			System.out.printf("1부터 %2d 까지의 합 : %2d%n", i, sum);
+//		}
+		
+//		Ex4_11
+//		for(int i = 1; i <= 5; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+//		Ex4_12
+//		int i = 5;
+//		
+//		while(i-- != 0) {
+//			System.out.println(i + " - I can do it.");
+//		}
+		
+//		Ex4_13
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(sum <= 100) {
+//			System.out.printf("%d - %d%n", i, sum);
+//			sum += ++i;
+//		}
+		
+//		Ex4_14
+//		int num = 0, sum = 0;
+//		System.out.print("숫자를 입력하세요.(예 : 12345)>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		String tmp = scanner.nextLine();
+//		num = Integer.parseInt(tmp);
+//		
+//		while(num != 0) {
+//			sum += num % 10;
+//			System.out.printf("sum = %3d num = %d%n", sum, num);
+//			
+//			num /= 10;
+//		}
+//		System.out.println("각 자리수의 합 : " + sum);
+		
+//		Ex4_15
+//		int input = 0, answer = 0;
+//		
+//		answer = (int)(Math.random() * 100) + 1;
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		do {
+//			System.out.print("1과 100사이의 정수를 입력하세요.>");
+//			input = scanner.nextInt();
+//			
+//			if(input > answer) {
+//				System.out.println("더 작은 수로 다시 시도해보세요.");
+//			} else if(input < answer) {
+//				System.out.println("더 큰 수로 다시 시도해보세요.");
+//			}
+//		} while(input != answer);
+//		System.out.println("정답 입니다.");
+		
+//		Ex4_16
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(true) {
+//			if(sum > 100)
+//				break;
+//			++i;
+//			sum += i;
+//		}
+//		System.out.println("i = " + i);
+//		System.out.println("sum = " + sum);
+		
+//		Ex4_17
+//		for(int i = 0; i <= 10; i++) {
+//			if(i % 3 == 0)
+//				continue;
+//			System.out.println(i);
+//		}
+		
+//		Ex4_18
+//		int menu = 0;
+//		int num = 0;
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		while(true) {
+//			System.out.println("1() square");
+//			System.out.println("2() square root");
+//			System.out.println("(3) log");
+//			System.out.println("원하는 메뉴(1~3)를 선택하세요.(종료:0)>");
+//			
+//			String tmp = scanner.nextLine();
+//			menu = Integer.parseInt(tmp);
+//			
+//			if(menu == 0) {
+//				System.out.println("프로그램을 종료합니다.");
+//				break;
+//			} else if(!(1 <= menu && menu <= 3)) {
+//				System.out.println("메뉴를 잘못 선택하셨습니다.(죵료는 0)");
+//				continue;
+//			}
+//			System.out.println("선택하신 메뉴는 " + menu + "번입니다.");
+//		}
+		
+//		Ex4_19
+//		Loop1 : for(int i = 2; i <= 9; i++) {
+//			for(int j = 1; j <= 9; j++) {
+//				if(j == 5)
+//					break Loop1;
+//				System.out.println(i + "*" + j + "=" + i*j);
+//			}
+//			System.out.println();
+//		}
+		
+//		연습문제 4-2
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 20; i++) {
+//			if(i % 2 != 0 && i % 3 != 0)
+//			sum += i;
+//		}
+//		System.out.println(sum);
+		
+//		연습문제 4-3
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				sum += j;
+//			}
+//		}
+//		System.out.println(sum);
+		
+//		답
+//		부분합 / 총합 계산
+//		int sum = 0;
+//		int totalsum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+////			1st 부분 합
+//			sum = sum + i;
+////			2st 부분 합을 다 더한 총합
+//			totalsum = totalsum + sum;
+////			로깅 디버깅 방법
+////			System.out.println("i = " + i);
+////			System.out.println("sum = " + sum);
+////			System.out.println("totalsum = " + totalsum);
+//		}
+//		System.out.println("totalsum = " + totalsum);
+		
+//		연습문제 4-4
+//		답
+//		int sum = 0; // 총합을 저장할 변수
+//		int s = 1; // 값의 부호를 바꿔주는 변수
+//		int num = 0; // 총 몇번 계산했는지 카운트 하는 변수
+//		int i = 1; // while문 카운트 변수
+//		
+//		while(true) {
+////			탈출 조건 sum >= 100 보다 커지면
+//			if(sum >= 100) {
+//				break;
+//			}
+//			num = s * i;
+////			짝수마다 음수로 바꿔주기
+//			s = -s;
+////			누적합(양수 + 음수) >= 100 탈출
+//			sum = sum + num;
+//			i++;
+//		}
+//		System.out.println("num = " + num);
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-5
+//		int i = 0;
+//		while(i <= 10) {
+//			int j = 0;
+//			while(j <= i) {
+//				j++;
+//				System.out.print("*");
+//			}
+//			i++;
+//			System.out.println();
+//		}
+		
+//		연습문제 4-6
+//		for(int i = 1; i <= 6; i++) {
+//			for(int j = 1; j <= 6; j++) {
+//				if((i + j) == 6) {
+//					System.out.println(i + "+" + j);
+//				}
+//			}
+//		}
+		
+//		연습문제 4-7
+//		String str = "12345";
+//		int sum = 0;
+//		
+//		for(int i = 0; i < str.length(); i++) {
+//			sum += str.charAt(i) - '0'; // i = 0이라고 가정, '1' - '0' = 1(아스키 코드)
+//		}
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-8
+//		int value = ((int)(Math.random() * 6) + 1);
+//		
+//		System.out.println("value : " + value);
+		
+//		연습문제 4-9
+//		int num = 12345;
+//		int sum = 0;
+//		
+//		int number = num % 10;
+//		int ten = (num / 10) % 10;
+//		int hun = (num / 100) % 10;
+//		int tho = (num / 1000) % 10;
+//		int mil = (num / 10000);
+//		
+//		sum = number + ten + hun + tho + mil;
+//		System.out.println("sum = " + sum);
+//		답
+		int num = 12345;
+		int sum = 0;
+		
+//		나머지 연산자를 이용해서 계산하는 방법
+		while(num > 0) {
+//			나머지 연산 자리수 자르기
+			sum = sum + (num % 10);
+			num / 10 값을 반복
+			
+		}
+		
+//		연습문제 4-10
+		int answer = (int)(Math.random() * 100) + 1;
+		int input = 0;
+		int count = 0;
+		
+		java.util.Scanner s = new java.util.Scanner(System.in);
+		
+		do {
+			count++;
+			System.out.print("1과 100사이의 값을 입력하세요 : ");
+			input = s.nextInt();
+			
+			if(answer > input) {
+				System.out.println("더 큰 수를 입력하세요.");
+				continue;
+			} else if(answer < input) {
+				System.out.println("더 작은 수를 입력하세요.");
+				continue;
+			} else {
+				System.out.println("정답이다 이 씨발롬아");
+				System.out.println("시도 횟수는 " + count + "임");
+				break;
+			}
+		} while(true);
+		
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2022-04-08 17:38:42.081
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2022-04-08 17:38:42.082
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2022-04-08 17:38:42.101
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package ex;
+
+import java.util.Scanner;
+
+public class Ex4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Ex4_1
+//		int score = 80;
+//		
+//		if(score > 60) {
+//			System.out.println("합격입니다.");
+//		}
+		
+//		Ex4_2
+//		int x = 0;
+//		System.out.printf("x = %d 일 때, 참인 것은 %n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("! (x == 0)");
+//		if(!(x != 0)) System.out.println("! (x != 0)");
+//		
+//		x = 1;
+//		System.out.printf("x = %d 일 때, 참인 것은%n", x);
+//		
+//		if(x == 0) System.out.println("x == 0");
+//		if(x != 0) System.out.println("x != 0");
+//		if(!(x == 0)) System.out.println("!(x == 0)");
+//		if(!(x != 0)) System.out.println("!(x != 0)");
+		
+//		Ex4_3
+//		System.out.print("숫자를 하나 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		int input = scanner.nextInt();
+//		
+//		if(input == 0) {
+//			System.out.println("입력하신 숫자는 0입니다.");
+//		} else {
+//			System.out.println("입력하신 숫자는 0이 아닙니다.");
+//		}
+		
+//		Ex4_4
+//		int score = 0;
+//		char grade = ' ';
+//		
+//		System.out.print("점수를 입력하세요.>");
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//		} else if(score >= 80) {
+//			grade = 'B';
+//		} else if(score >= 70) {
+//			grade = 'C';
+//		} else {
+//			grade = 'D';
+//		}
+//		System.out.println("당신의 학점은 " + grade + "입니다.");
+		
+//		Ex4_5
+		
+//		int score = 0;
+//		char grade = ' ', opt = '0';
+//		
+//		System.out.print("점수를 입력해주세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		score = scanner.nextInt();
+//		
+//		System.out.printf("당신의 점수는 %d입니다.%n", score);
+//		
+//		if(score >= 90) {
+//			grade = 'A';
+//			if(score >= 98) {
+//				opt = '+';
+//			} else if(score < 94) {
+//				opt = '-';
+//			}
+//		} else if(score >= 80) {
+//			grade = 'B';
+//			if(score >= 88) {
+//				opt = '+';
+//			} else if(score < 84) {
+//				opt = '-';
+//			}
+//		} else {
+//			grade = 'C';
+//		}
+//		System.out.printf("당신의 학점은 %c%c입니다.%n", grade, opt);
+		
+//		Ex4_6
+//		System.out.print("현재 월을 입력하세요.>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		int month = scanner.nextInt();
+//		
+//		switch(month) {
+//		case 3:
+//		case 4:
+//		case 5:
+//			System.out.println("현재의 계절은 봄입니다.");
+//			break;
+//		case 6: case 7: case 8:
+//			System.out.println("현재의 계절은 여름입니다.");
+//			break;
+//		case 9: case 10: case 11:
+//			System.out.println("현재의 계절은 가을입니다.");
+//			break;
+//		default:
+//			System.out.println("현재의 계절은 겨울입니다.");
+//		}
+		
+//		Ex4_7
+//		int num = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			num = (int)(Math.random() * 6) + 1;
+//			System.out.println(num);
+//		}
+		
+//		Ex4_8
+//		for(int i = 1; i <= 3; i++) {
+//			System.out.println("Hello");
+//		}
+		
+//		Ex4_9
+//		for(int i = 1; i <= 5; i++)
+//			System.out.println(i);
+//				
+//		for(int i = 1; i <= 5; i++)
+//			System.out.print(i);
+//		
+//		System.out.println();
+		
+//		Ex4_10
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 5; i++) {
+//			sum += i;
+//			System.out.printf("1부터 %2d 까지의 합 : %2d%n", i, sum);
+//		}
+		
+//		Ex4_11
+//		for(int i = 1; i <= 5; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+//		Ex4_12
+//		int i = 5;
+//		
+//		while(i-- != 0) {
+//			System.out.println(i + " - I can do it.");
+//		}
+		
+//		Ex4_13
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(sum <= 100) {
+//			System.out.printf("%d - %d%n", i, sum);
+//			sum += ++i;
+//		}
+		
+//		Ex4_14
+//		int num = 0, sum = 0;
+//		System.out.print("숫자를 입력하세요.(예 : 12345)>");
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		String tmp = scanner.nextLine();
+//		num = Integer.parseInt(tmp);
+//		
+//		while(num != 0) {
+//			sum += num % 10;
+//			System.out.printf("sum = %3d num = %d%n", sum, num);
+//			
+//			num /= 10;
+//		}
+//		System.out.println("각 자리수의 합 : " + sum);
+		
+//		Ex4_15
+//		int input = 0, answer = 0;
+//		
+//		answer = (int)(Math.random() * 100) + 1;
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		do {
+//			System.out.print("1과 100사이의 정수를 입력하세요.>");
+//			input = scanner.nextInt();
+//			
+//			if(input > answer) {
+//				System.out.println("더 작은 수로 다시 시도해보세요.");
+//			} else if(input < answer) {
+//				System.out.println("더 큰 수로 다시 시도해보세요.");
+//			}
+//		} while(input != answer);
+//		System.out.println("정답 입니다.");
+		
+//		Ex4_16
+//		int sum = 0;
+//		int i = 0;
+//		
+//		while(true) {
+//			if(sum > 100)
+//				break;
+//			++i;
+//			sum += i;
+//		}
+//		System.out.println("i = " + i);
+//		System.out.println("sum = " + sum);
+		
+//		Ex4_17
+//		for(int i = 0; i <= 10; i++) {
+//			if(i % 3 == 0)
+//				continue;
+//			System.out.println(i);
+//		}
+		
+//		Ex4_18
+//		int menu = 0;
+//		int num = 0;
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		while(true) {
+//			System.out.println("1() square");
+//			System.out.println("2() square root");
+//			System.out.println("(3) log");
+//			System.out.println("원하는 메뉴(1~3)를 선택하세요.(종료:0)>");
+//			
+//			String tmp = scanner.nextLine();
+//			menu = Integer.parseInt(tmp);
+//			
+//			if(menu == 0) {
+//				System.out.println("프로그램을 종료합니다.");
+//				break;
+//			} else if(!(1 <= menu && menu <= 3)) {
+//				System.out.println("메뉴를 잘못 선택하셨습니다.(죵료는 0)");
+//				continue;
+//			}
+//			System.out.println("선택하신 메뉴는 " + menu + "번입니다.");
+//		}
+		
+//		Ex4_19
+//		Loop1 : for(int i = 2; i <= 9; i++) {
+//			for(int j = 1; j <= 9; j++) {
+//				if(j == 5)
+//					break Loop1;
+//				System.out.println(i + "*" + j + "=" + i*j);
+//			}
+//			System.out.println();
+//		}
+		
+//		연습문제 4-2
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 20; i++) {
+//			if(i % 2 != 0 && i % 3 != 0)
+//			sum += i;
+//		}
+//		System.out.println(sum);
+		
+//		연습문제 4-3
+//		int sum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				sum += j;
+//			}
+//		}
+//		System.out.println(sum);
+		
+//		답
+//		부분합 / 총합 계산
+//		int sum = 0;
+//		int totalsum = 0;
+//		
+//		for(int i = 1; i <= 10; i++) {
+////			1st 부분 합
+//			sum = sum + i;
+////			2st 부분 합을 다 더한 총합
+//			totalsum = totalsum + sum;
+////			로깅 디버깅 방법
+////			System.out.println("i = " + i);
+////			System.out.println("sum = " + sum);
+////			System.out.println("totalsum = " + totalsum);
+//		}
+//		System.out.println("totalsum = " + totalsum);
+		
+//		연습문제 4-4
+//		답
+//		int sum = 0; // 총합을 저장할 변수
+//		int s = 1; // 값의 부호를 바꿔주는 변수
+//		int num = 0; // 총 몇번 계산했는지 카운트 하는 변수
+//		int i = 1; // while문 카운트 변수
+//		
+//		while(true) {
+////			탈출 조건 sum >= 100 보다 커지면
+//			if(sum >= 100) {
+//				break;
+//			}
+//			num = s * i;
+////			짝수마다 음수로 바꿔주기
+//			s = -s;
+////			누적합(양수 + 음수) >= 100 탈출
+//			sum = sum + num;
+//			i++;
+//		}
+//		System.out.println("num = " + num);
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-5
+//		int i = 0;
+//		while(i <= 10) {
+//			int j = 0;
+//			while(j <= i) {
+//				j++;
+//				System.out.print("*");
+//			}
+//			i++;
+//			System.out.println();
+//		}
+		
+//		연습문제 4-6
+//		for(int i = 1; i <= 6; i++) {
+//			for(int j = 1; j <= 6; j++) {
+//				if((i + j) == 6) {
+//					System.out.println(i + "+" + j);
+//				}
+//			}
+//		}
+		
+//		연습문제 4-7
+//		String str = "12345";
+//		int sum = 0;
+//		
+//		for(int i = 0; i < str.length(); i++) {
+//			sum += str.charAt(i) - '0'; // i = 0이라고 가정, '1' - '0' = 1(아스키 코드)
+//		}
+//		System.out.println("sum = " + sum);
+		
+//		연습문제 4-8
+//		int value = ((int)(Math.random() * 6) + 1);
+//		
+//		System.out.println("value : " + value);
+		
+//		연습문제 4-9
+//		int num = 12345;
+//		int sum = 0;
+//		
+//		int number = num % 10;
+//		int ten = (num / 10) % 10;
+//		int hun = (num / 100) % 10;
+//		int tho = (num / 1000) % 10;
+//		int mil = (num / 10000);
+//		
+//		sum = number + ten + hun + tho + mil;
+//		System.out.println("sum = " + sum);
+//		답
+		int num = 12345;
+		int sum = 0;
+		
+//		나머지 연산자를 이용해서 계산하는 방법
+		while(num > 0) {
+//			나머지 연산 자리수 자르기
+			sum = sum + (num % 10);
+			num / 10 값을 반복
+			
+		}
+		
+//		연습문제 4-10
+		int answer = (int)(Math.random() * 100) + 1;
+		int input = 0;
+		int count = 0;
+		
+		java.util.Scanner s = new java.util.Scanner(System.in);
+		
+		do {
+			count++;
+			System.out.print("1과 100사이의 값을 입력하세요 : ");
+			input = s.nextInt();
+			
+			if(answer > input) {
+				System.out.println("더 큰 수를 입력하세요.");
+				continue;
+			} else if(answer < input) {
+				System.out.println("더 작은 수를 입력하세요.");
+				continue;
+			} else {
+				System.out.println("정답이다 이 씨발롬아");
+				System.out.println("시도 횟수는 " + count + "임");
+				break;
+			}
+		} while(true);
+		
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:189)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2022-04-08 17:38:42.102
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:189)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2022-04-08 17:38:42.103
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3853)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3095)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3013)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3504)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3087)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3390)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1271)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:189)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
